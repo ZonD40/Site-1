@@ -1,0 +1,77 @@
+.catalog
+	height: 720px
+	padding-top: 80px
+	&__title
+		text-align: center
+	&__all-link
+		position: relative
+		display: block
+		color: $second-color
+		font-weight: 500
+		font-size: 16px
+		text-align: right
+		margin-bottom: 37px
+		text-decoration: none
+		cursor: pointer
+		&:hover
+			color: $second-color
+		&::after
+			content: ''
+			position: absolute
+			bottom: -6px
+			right: 2px
+			width: 100px
+			height: 1px
+			background-color: #C4C0B6
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	&__item
+		padding: 40px 30px
+	&__name
+		color: $main-color
+		font-family: 'Playfair Display'
+		font-weight: 700
+		font-size: 14px
+		letter-spacing: 0.03em
+		opacity: 0.82
+		margin-bottom: 10px
+		padding-left: 10px
+	&__price
+		color: $main-color	
+		font-family: 'Prata'
+		font-weight: 400
+		font-size: 12px
+		opacity: 0.82
+		padding-left: 10px
+	&__circle
+		width: 311px
+		height: 311px
+		border-radius: 100%
+		background-color: #ffffff
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+		&-border
+			padding-top: 1px
+			width: 313px
+			height: 313px
+			border-radius: 100%
+			background: linear-gradient(to left, #E2D0C4, rgba(0,0,0,0))
+			margin-bottom: 20px
+	&__details
+		position: relative
+		color: $main-color
+		font-family: 'Playfair Display'
+		font-weight: 400
+		font-size: 16px
+		padding-left: 48px
+		cursor: pointer
+		+before-line
+		&::before
+			width: 30px
+
+
+
+

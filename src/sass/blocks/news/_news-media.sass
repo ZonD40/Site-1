@@ -1,0 +1,41 @@
+@media (max-width: 1200px)
+
+@media (max-width: 992px)
+	.news
+		height: 560px
+		&__descr
+			width: 312px
+		&__gallery
+			grid-template-columns: minmax(auto, 180px) minmax(auto, 377px)
+			grid-template-rows: repeat(2, 185px)
+@media (max-width: 768px)
+	.news
+		height: auto
+		padding-top: 40px
+		margin-bottom: 20px
+		&__wrapper
+			flex-direction: column
+			align-items: center
+		&__text
+			margin-bottom: 30px
+		&__title
+			margin-bottom: 25px
+		&__descr
+			margin: 0 auto
+			text-align: center
+			font-size: 14px
+			margin-bottom: 40px
+		&__social
+			margin: 0 auto
+@media (max-width: 576px) 
+	.news
+		&__gallery
+			grid-template-columns: 1fr	
+			grid-template-rows: 1fr
+		&__photo
+			&_small
+				display: none
+			&_big
+				grid-column: auto
+				grid-row: auto
+	

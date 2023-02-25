@@ -1,0 +1,126 @@
+.promo
+	&__menu
+		height: 85px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__nav
+		width: 422px
+		display: flex
+		justify-content: space-between
+		&-item
+			font-weight: 400
+			font-size: 14px
+			color: $nav-color
+			text-decoration: none
+			cursor: pointer
+			&:hover
+				color: $nav-color
+	&__icons
+		width: 100px
+		display: flex
+		justify-content: space-between
+		div
+			height: 16px
+			cursor: pointer
+			img
+				height: 100%
+		&-like
+			position: relative
+			&::before
+				content: '1'
+				position: absolute
+				top: -1px
+				right: -7px
+				width: 13px
+				height: 13px
+				border-radius: 100%
+				background-color: #E6C8B4
+				font-weight: 400
+				font-size: 8px
+				line-height: 9px
+				color: $main-color
+				text-align: center
+				line-height: 13px
+		&-hamburger
+			display: none
+	&__wrapper
+		height: 768px
+		background: url(../img/promo/bg.jpg) no-repeat 50%/cover
+		display: flex
+		justify-content: space-around
+	&__text
+		padding-top: 236px
+	&__title
+		position: relative
+		color: $main-color
+		font-family: 'Playfair Display'
+		font-weight: 400
+		font-size: 45px
+		line-height: 60px
+		+before-line
+		&::before
+			top: 54%
+			left: -64px
+	&__subtitle
+		color: $main-color
+		font-family: 'Playfair Display'
+		font-weight: 400
+		font-size: 30px
+		line-height: 40px
+		margin-bottom: 39px
+	&__descr
+		width: 260px
+		font-weight: 300
+		font-size: 14px
+		line-height: 21px
+		color: $main-color
+		opacity: 0.82
+		margin-bottom: 64px
+	&__button
+		width: 205px
+		height: 64px
+		background-color: $second-color
+		border: none
+		color: #ffffff
+		font-weight: 500
+		font-size: 12px
+		letter-spacing: 0.05em
+		text-transform: uppercase
+		transition: all 0.2s
+		&:hover
+			scale: 1.01
+			box-shadow: 4px 6px 10px #00000063
+	&__picture
+		position: relative
+		height: 100%
+		max-width: 530px
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+	&__price
+		position: absolute
+		top: 135px
+		left: -75px
+		color: $main-color
+		font-family: 'Prata'
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		+before-line
+		&::before
+			left: 85px
+	&__diameter
+		position: absolute
+		bottom: 115px
+		right: -90px
+		color: $main-color
+		font-family: 'Prata'
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		+before-line
+		&::before
+			left: -70px
+
